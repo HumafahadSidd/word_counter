@@ -23,6 +23,9 @@ const answers:{
 
 // const words = answers.sentence.trim().split(" ")
 const words = answers.sentence.trim().split(/\s+/);
+const words = answers.sentence.trim()
+  ? answers.sentence.trim().split(/\s+/)
+  : [];
 
 // Print the array of words by the console
 console.log(words)
